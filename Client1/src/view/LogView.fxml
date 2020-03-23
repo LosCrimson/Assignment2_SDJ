@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="351.0" prefWidth="600.0" userData="Converter Log" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LogViewController">
+    <children>
+        <HBox alignment="TOP_CENTER">
+            <children>
+                <Label prefHeight="67.0" prefWidth="322.0" text="Converter Log">
+                    <font>
+                        <Font name="Comic Sans MS" size="48.0" />
+                    </font>
+                </Label>
+                <Pane prefHeight="67.0" prefWidth="109.0" />
+            </children>
+        </HBox>
+        <ListView fx:id="logList" editable="false" prefHeight="258.0" prefWidth="554.0" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="message" prefHeight="50.0" prefWidth="367.0" textAlignment="CENTER" textFill="#0404e1">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="10.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#onBack" text="Back">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="120.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+    </children>
+</VBox>
